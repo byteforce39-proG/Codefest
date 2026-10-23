@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #183b63; background: #f7fbff; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+::selection { background: #c6e0ff; color: #173c68; }
+.app-shell { min-height: 100vh; background: radial-gradient(circle at 88% 0%, rgba(220,236,255,.65), transparent 28%), #f7fbff; }
+.sidebar { transition: transform .22s ease; }
+.nav-scroll::-webkit-scrollbar { width: 5px; }
+.nav-scroll::-webkit-scrollbar-thumb { background: #d8e8f9; border-radius: 10px; }
+.card { border: 1px solid #e3edf8; background: rgba(255,255,255,.92); border-radius: 20px; box-shadow: 0 10px 35px rgba(41,93,153,.045); }
+.field { width:100%; border:1px solid #dbe7f4; border-radius:12px; background:#fff; padding:11px 13px; color:#23486e; outline:none; }
+.field:focus { border-color:#79b5f5; box-shadow:0 0 0 3px rgba(90,161,245,.14); }
+.btn-primary { background:#347fe0; color:white; border-radius:12px; padding:10px 15px; font-weight:650; transition:.18s; }
+.btn-primary:hover { background:#2563c5; transform:translateY(-1px); }
+.btn-secondary { border:1px solid #dce8f5; color:#315577; background:#fff; border-radius:12px; padding:10px 14px; font-weight:600; }
+.btn-secondary:hover { background:#f2f8ff; }
+.nav-item { display:flex; align-items:center; gap:11px; width:100%; padding:10px 12px; border-radius:12px; color:#6a829d; text-align:left; font-size:13px; font-weight:600; transition:.15s; }
+.nav-item:hover { background:#f2f8ff; color:#2c619e; }
+.nav-item.active { background:#e7f2ff; color:#286dca; box-shadow:inset 3px 0 #347fe0; }
+.metric-bar { height:7px; border-radius:99px; background:#eaf2fb; overflow:hidden; }
+.metric-bar > span { display:block; height:100%; border-radius:99px; background:linear-gradient(90deg,#5aa1f5,#347fe0); }
+@media (max-width: 767px) { .sidebar.mobile-open { transform:translateX(0); } .sidebar.mobile-closed { transform:translateX(-100%); } }
